@@ -1,0 +1,14 @@
+com\contact\dto\ResponseBean\ContactResponseBean.class
+com\contact\dto\ResponseBean\ContactResponseBean$ContactResponseBeanBuilder.class
+com\contact\dto\RequestBean\ContactRequestBean$ContactRequestBeanBuilder.class
+com\contact\controller\ContactController.class
+com\contact\entity\Contact$ContactBuilder.class
+com\contact\service\ContactService.class
+com\contact\ResponseBean\ResponseBean$ResponseBeanBuilder.class
+com\contact\entity\Contact.class
+com\contact\ContactApplication.class
+com\contact\repository\ContactRepository.class
+com\contact\dto\RequestBean\ContactRequestBean.class
+com\contact\ResponseBean\ResponseBean.class
+com\contact\mapper\ContactMapper.class
+com\contact\enums\ContactStatus.class

@@ -1,0 +1,24 @@
+<h3 class="text-center">Add Contact</h3>
+<div class="col-md-8 offset-md-3">
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+    <div class="mb-3">
+        <label>Name</label>
+        <input type="text" name="name" id="contact_name" class="form-control"
+        formControlName = "contact_name">
+    </div>
+
+    <div class="mb-3">
+        <label>Phone Number</label>
+        <input type="number" name="contact_number" id="contact_number" class="form-control"
+        formControlName = "contact_number">
+    </div>
+
+    <div class="mb-3">
+        <label>User Id</label>
+        <input type="number" name="user_id" id="user_id" class="form-control"
+        formControlName = "user_id">
+    </div>
+
+    <button class="btn brn-success" type="submit">Submit</button>
+</form>
+</div>

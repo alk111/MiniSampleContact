@@ -1,0 +1,24 @@
+<h2>Contact List</h2>
+<!-- {{contacts |json}} -->
+<table class="table table-striped">
+    <thead>
+        <th>Sr. No.</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Phone Number</th>
+        <th>User Id</th>
+        <th colspan="2" class="text-center">Action</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contact of contacts;index as i">
+            <td>{{i}}</td>
+            <td>{{contact.contact_id}}</td>
+            <td>{{contact.contact_name}}</td>
+            <td>{{contact.contact_number}}</td>
+            <td>{{contact.user_id}}</td>            
+            <td style="max-width: fit-content;"><button (click)="updateButton(contact)">Update </button></td>
+            <td style="max-width: max-content"><button (click)="deleteButton(contact.contact_id)">Delete </button></td>
+        </tr>
+    </tbody>
+</table>
+
