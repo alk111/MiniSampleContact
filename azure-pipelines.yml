@@ -15,7 +15,9 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+
 - script: |
+    cd contact-frontend
     npm install -g @angular/cli
     npm install
     ng build --prod
