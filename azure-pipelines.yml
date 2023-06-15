@@ -18,13 +18,11 @@ steps:
     npm install
     ng build 
   displayName: 'npm install and build'
-  
+
 - task: Docker@2
   inputs:
-    containerRegistry: 'Docker Hub Conn'
-    repository: 'alkaifkhan/dockerscannedimages'
-    command: 'buildAndPush'
-    Dockerfile: 'contact-frontend/Dockerfile'
+    command: 'build'
+    Dockerfile: '**/Dockerfile'
 
 #- script: 
 #    cd contact-frontend
