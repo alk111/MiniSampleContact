@@ -24,7 +24,7 @@ steps:
     containerRegistry: 'Docker Hub Conn'
     repository: 'alkaifkhan/dockerscannedimages'
     command: 'buildAndPush'
-    Dockerfile: 'contact-frontend//Dockerfile'
+    Dockerfile: 'contact-frontend/Dockerfile'
 
 #- script: 
 #    cd contact-frontend
