@@ -21,7 +21,9 @@ steps:
 
 - task: Docker@2
   inputs:
-    command: 'build'
+    containerRegistry: 'Docker Hub Conn'
+    repository: 'alkaifkhan/dockerscannedimages'
+    command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
 
 #- script: 
