@@ -6,8 +6,9 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+  name: Default
+  demands: alkaifag
 
 steps:
 - task: NodeTool@0
