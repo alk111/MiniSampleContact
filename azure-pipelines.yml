@@ -3,6 +3,10 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
+variables:
+  image_name: ang
+  image_tag: latest
+
 trigger:
 - main
 
@@ -21,10 +25,12 @@ steps:
 
 - task: Docker@2
   inputs:
-    containerRegistry: 'Docker Hub Conn'
-    repository: 'alkaifkhan/dockerscannedimages'
-    command: 'buildAndPush'
+    command: 'build'
+    repository: $(image_name)
+    tags: $(image_tag)
     Dockerfile: '**/Dockerfile'
 
+- script: 
+    trivy image $(image_name):$(image_tag)
 #- script: 
 #    cd contact-frontend
